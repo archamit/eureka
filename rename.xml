@@ -1,0 +1,11 @@
+<project name="BrokerDeploy" default="init">
+<property name="barfile" location="C:\Program Files (x86)\Jenkins\workspace\Microservice\Eureka\Eureka_Build\target" />
+<property name="artifact.name" value="eureka-0.0.1-SNAPSHOT" />
+<property name="artifact.version" value="1" />
+<target name="init">
+    	<antcall target="rename" />	
+    </target>
+    <target name="rename">
+		<rename src="${barfile}/eureka-0.0.1-SNAPSHOT.jar" dest="${artifact.name}-${artifact.version}.jar"/>
+	</target>
+</project>
