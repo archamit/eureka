@@ -1,4 +1,6 @@
-From openjdk:8
+From ubuntu:trusty
+RUN apt-get -y update
+RUN apt-get -y install wget
 RUN apt-get -y install libxml2-utils
 server="http://897e3efb.ngrok.io/artifactory"
 repo="eureka"
