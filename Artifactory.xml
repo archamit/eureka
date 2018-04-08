@@ -1,7 +1,7 @@
 <project xmlns:artifact="antlib:org.apache.maven.artifact.ant" default="init">
     <path id="maven-ant-tasks.classpath" path="C:/lib/usedforartifactory/maven-ant-tasks-2.1.3.jar" /> 
    <!-- directory-properties -->
-    <property name="barfile" location="C:\Jenkins\workspace\Microservice\eureka\eureka_build" />
+    <property name="barfile" location="C:\\Jenkins\\workspace\\Microservice\\eureka\\eureka_build" />
     <property name="libs.dir" value="C:/lib/usedforartifactory" />
      
     <!-- maven-ant-tasks jar -->
