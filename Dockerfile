@@ -7,8 +7,6 @@ RUN repo="eureka"
 RUN name="eureka"
 RUN artifact=$name
 RUN path=$server/$repo/$artifact
-RUN mvnMetadata=$(curl -s "$path/maven-metadata.xml")
-RUN tomcatpath=/usr/local/apache-tomcat-8.5.9/webapps/
 RUN wget "$path/maven-metadata.xml"
 RUN let itemsCount=$(xmllint --xpath 'count(//versioning/versions/version)' maven-metadata.xml)
 RUN #echo $itemsCount
