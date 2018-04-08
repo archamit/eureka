@@ -16,7 +16,7 @@
     <property name="artifact.pom" value="pom.xml" />
  
     <!-- remote-repo -->
-    <property name="remote.repo.url" value="http://localhost:8081/artifactory/webapp/" />
+    <property name="remote.repo.url" value="http://localhost:8081/artifactory/" />
     <property name="remote.repo.username" value="admin" />
     <property name="remote.repo.password" value="password" />
  
