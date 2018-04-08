@@ -26,7 +26,7 @@
  
     <!-- init-task for coupling following tasks -->
     <target name="init">
-		<antcall target="clean" />
+		
 		<antcall target="UploadArtifact" />		
     </target>
  
