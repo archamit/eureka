@@ -6,6 +6,6 @@
     	<antcall target="rename" />	
     </target>
     <target name="rename">
-    	<move file="${barfile}/eureka-0.0.1-SNAPSHOT.jar" todir="${artifact.name}-${artifact.version}.jar"/>
+    	<move file="${barfile}/eureka-0.0.1-SNAPSHOT.jar" todir="${barfile}/${artifact.name}-${artifact.version}.jar"/>
 	</target>
 </project>
