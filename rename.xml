@@ -3,9 +3,14 @@
 <property name="artifact.name" value="eureka-0.0.1-SNAPSHOT" />
 <property name="artifact.version" value="1" />
 <target name="init">
-    	<antcall target="rename" />	
+<antcall target="rename" />	
     </target>
     <target name="rename">
-    	<move file="${barfile}/eureka-0.0.1-SNAPSHOT.jar" todir="${barfile}/${artifact.name}-${artifact.version}.jar"/>
+    	<move todir="${barfile}" includeemptydirs="false">
+		    <fileset dir="${barfile}"/>
+		    <mapper type="glob" from="eureka-0.0.1-SNAPSHOT.jar" to="${artifact.name}-${artifact.version}.jar"/>
+		  </move>
 	</target>
+	
+	
 </project>
