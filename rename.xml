@@ -1,5 +1,5 @@
 <project name="BrokerDeploy" default="init">
-<property name="barfile" location="C://Jenkins//workspace//Microservice//eureka//eureka_build//target" />
+<property name="barfile" location="/var/lib/jenkins/workspace/microservices/eureka/eureka_build" />
 <property name="artifact.name" value="eureka-0.0.1-SNAPSHOT" />
 <property name="artifact.version" value="1" />
 <target name="init">
