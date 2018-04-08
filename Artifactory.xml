@@ -8,7 +8,7 @@
     <property name="mvn.ant.tasks.jar" value="maven-ant-tasks-2.1.3.jar" />
  
    <!-- artifact-properties -->
-	 <!-- <property name="artifact.group" value="Raw_bar" /> -->
+    <property name="artifact.group" value="Raw_bar" />
 	<!--<echo>${env}</echo>-->
 	<property name="artifact.name" value="eureka-0.0.1-SNAPSHOT" />
     <property name="artifact.version" value="${BUILD_NUMBER}" />
@@ -16,7 +16,7 @@
     <property name="artifact.pom" value="pom.xml" />
  
     <!-- remote-repo -->
-    <property name="remote.repo.url" value="http://localhost:8081/artifactory/webapp" />
+    <property name="remote.repo.url" value="http://localhost:8081/artifactory/webapp/" />
     <property name="remote.repo.username" value="admin" />
     <property name="remote.repo.password" value="password" />
  
@@ -33,7 +33,7 @@
     <!-- deploy-task for creating and writing a temporary pom-file and deploying the artifact beside this pom-file -->
     
 	<target name="UploadArtifact">
-        <artifact:pom id="tmp.pom"  artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" name="${artifact.name}" />
+        <artifact:pom id="tmp.pom" groupid="${artifact.group}" artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" name="${artifact.name}" />
         <artifact:writepom pomRefId="tmp.pom" file="${artifact.pom}"/>
         <artifact:deploy file="${barfile}/${artifact.name}.${artifact.type}">
             <remoteRepository url="${remote.repo.url}">
