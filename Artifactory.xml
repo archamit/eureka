@@ -35,7 +35,7 @@
 	<target name="UploadArtifact">
         <artifact:pom id="tmp.pom" groupid="${artifact.group}" artifactid="${artifact.name}" version="${artifact.version}" packaging="${artifact.type}" name="${artifact.name}" />
         <artifact:writepom pomRefId="tmp.pom" file="${artifact.pom}"/>
-        <artifact:deploy file="${barfile}/${artifact.name}-${artifact.version}.${artifact.type}">
+        <artifact:deploy file="${barfile}/${artifact.name}-${artifact.version}.${artifact.type}/${artifact.name}-${artifact.version}.${artifact.type}">
             <remoteRepository url="${remote.repo.url}">
                 <authentication username="${remote.repo.username}" password="${remote.repo.password}" />
             </remoteRepository>
