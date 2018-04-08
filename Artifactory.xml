@@ -8,7 +8,7 @@
     <property name="mvn.ant.tasks.jar" value="maven-ant-tasks-2.1.3.jar" />
  
    <!-- artifact-properties -->
-    <property name="artifact.group" value="eureka" />
+    <property name="artifact.group" value="kar" />
 	<!--<echo>${env}</echo>-->
 	<property name="artifact.name" value="eureka-0.0.1-SNAPSHOT" />
     <property name="artifact.version" value="1" />
