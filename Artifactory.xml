@@ -10,7 +10,7 @@
    <!-- artifact-properties -->
     <property name="artifact.group" value="Raw_bar" />
 	<!--<echo>${env}</echo>-->
-	<property name="artifact.name" value="eureka_0.0.1-SNAPSHOT" />
+	<property name="artifact.name" value="eureka-0.0.1-SNAPSHOT" />
     <property name="artifact.version" value="${BUILD_NUMBER}" />
     <property name="artifact.type" value="jar" />
     <property name="artifact.pom" value="pom.xml" />
