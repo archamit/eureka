@@ -27,7 +27,7 @@ ENTRYPOINT echo $filename
 ENTRYPOINT echo $path/$lastreleasenumber/$filename.jar
 ENTRYPOINT wget $path/$lastreleasenumber/$filename.jar
 ENTRYPOINT rm "maven-metadata.xml"
-
+ENTRYPOINT echo $filename
 EXPOSE 1111
 ENTRYPOINT ["java","-jar",$filename]
 
