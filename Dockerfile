@@ -3,7 +3,7 @@ RUN apt-get -y update
 RUN apt-get -y install wget
 RUN apt-get -y install libxml2-utils
 ENTRYPOINT /bin/bash
-ENTRYPOINT server="http://8ac2b137.ngrok.io/artifactory"
+ENTRYPOINT server="http://183b05f3.ngrok.io/artifactory"
 ENTRYPOINT repo="eureka"
 ENTRYPOINT name="eureka"
 ENTRYPOINT artifact=$name
